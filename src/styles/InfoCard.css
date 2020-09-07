@@ -1,0 +1,64 @@
+.info-card{
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    min-height: 60px;
+    border: 1px solid #e3e6f0;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    border-radius: .35rem;
+    align-items: center;
+    padding: .5rem 0;
+    margin: .75rem;
+}
+.first-border{
+    border-left: .25rem solid #4E73DF;
+}
+.second-border{
+    border-left: .25rem solid #1CC88A;
+}
+.third-border{
+    border-left: .25rem solid #E85446;
+}
+.fourth-border{
+    border-left: .25rem solid #F6C23E;
+}
+.card-body{
+    padding: 1.25rem;
+}
+.info-card-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-option{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: .25rem;
+    color: #4E73DF;
+}
+.second-option{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: .25rem;
+    color: #1CC88A;
+}
+.third-option{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: .25rem;
+    color: #E85446;
+}
+.fourth-option{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: .25rem;
+    color: #F6C23E;
+}
+.amount{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.icons{
+    color: #DDDFEB;
+}
