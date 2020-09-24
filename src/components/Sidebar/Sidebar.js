@@ -26,14 +26,14 @@ function Sidebar() {
       </div>
 
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <i className="fas fa-fw fa-pen-square"></i>
           <span>Loan Applications</span>
         </a>
       </li>
 
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <i className="fas fa-fw fa-hand-holding-usd"></i>
           <span>Active Loans</span>
         </a>
@@ -45,22 +45,22 @@ function Sidebar() {
         Filters
       </div>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <span>Today</span>
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <span>Last week</span>
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <span>Last month</span>
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link collapsed" href="#">
+        <a className="nav-link collapsed" href="/">
           <span>Last year</span>
         </a>
       </li>
