@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from './Navbar';
+import Topbar from './Topbar';
 
-describe('Navbar', () => {
-  test('renders Navbar component', () => {
-    render(<Navbar />);
+describe('Topbar', () => {
+  test('renders Topbar component', () => {
+    render(<Topbar />);
   });
 });
