@@ -22,26 +22,6 @@ function Sidebar() {
       <hr className="sidebar-divider" />
 
       <div className="sidebar-heading">
-        Sections
-      </div>
-
-      <li className="nav-item">
-        <a className="nav-link collapsed" href="/">
-          <i className="fas fa-fw fa-pen-square"></i>
-          <span>Loan Applications</span>
-        </a>
-      </li>
-
-      <li className="nav-item">
-        <a className="nav-link collapsed" href="/">
-          <i className="fas fa-fw fa-hand-holding-usd"></i>
-          <span>Active Loans</span>
-        </a>
-      </li>
-
-      <hr className="sidebar-divider" />
-
-      <div className="sidebar-heading">
         Filters
       </div>
       <li className="nav-item">
