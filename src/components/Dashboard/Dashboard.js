@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
 import PageHeading from '../PageHeading/PageHeading';
@@ -8,8 +8,6 @@ import LineChart from '../LineChart/LineChart';
 import LoanApplications from '../LoanApplications/LoanApplications';
 
 function Dashboard() {
-  const [view, setView] = useState("Dashboard");
-
   return (
     <div id="wrapper">
       <Sidebar />
@@ -51,7 +49,7 @@ function Dashboard() {
                 <div className="card shadow mb-4">
                   <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 className="m-0 font-weight-bold text-primary">
-                      Loan applications
+                      Loan applications over time
                     </h6>
                   </div>
                   <div className="card-body">
@@ -98,9 +96,7 @@ function Dashboard() {
                     </h6>
                   </div>
                   <div className="card-body">
-                    <div className="table-responsive">
                       <LoanApplications />
-                    </div>
                   </div>
                 </div>
               </div>
