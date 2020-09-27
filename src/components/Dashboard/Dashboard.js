@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
 import PageHeading from '../PageHeading/PageHeading';
 import InfoCard from '../InfoCard/InfoCard';
 import DonutChart from '../DonutChart/DonutChart';
 import LineChart from '../LineChart/LineChart';
+import LoanApplications from '../LoanApplications/LoanApplications';
 
 function Dashboard() {
+  const [view, setView] = useState("Dashboard");
+
   return (
     <div id="wrapper">
       <Sidebar />
@@ -84,6 +87,25 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="row">
+              <div className="col-xl-12 col-lg-12">
+                <div className="card shadow mb-4">
+                  <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 className="m-0 font-weight-bold text-primary">
+                      Loan applications
+                    </h6>
+                  </div>
+                  <div className="card-body">
+                    <div className="table-responsive">
+                      <LoanApplications />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
             </div>
           </div>
         </div>
