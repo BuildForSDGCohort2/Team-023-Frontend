@@ -64,7 +64,7 @@ function Dashboard() {
                 <div className="card shadow mb-4">
                   <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 className="m-0 font-weight-bold text-primary">
-                      Loan amounts
+                      Loan application status
                     </h6>
                   </div>
 
@@ -74,12 +74,13 @@ function Dashboard() {
                     </div>
                     <div className="mt-4 text-center small">
                       <span className="mr-2">
-                        <i className="fa fa-circle text-primary"></i> Amount
-                        disbursed
+                        <i className="fa fa-circle text-primary"></i> Pending
                       </span>
                       <span className="mr-2">
-                        <i className="fa fa-circle text-success"></i> Amount
-                        recovered
+                        <i className="fa fa-circle text-success"></i> Approved
+                      </span>
+                      <span className="mr-2">
+                        <i className="fa fa-circle text-danger"></i> Rejected
                       </span>
                     </div>
                   </div>
@@ -96,12 +97,10 @@ function Dashboard() {
                     </h6>
                   </div>
                   <div className="card-body">
-                      <LoanApplications />
+                    <LoanApplications />
                   </div>
                 </div>
               </div>
-              
-              
             </div>
           </div>
         </div>
