@@ -22,12 +22,12 @@ export default class DonutChart extends PureComponent {
       thisDonutChart = new Chart(myChartRef, {
         type: "doughnut",
         data: {
-          labels: ["Amount disbursed", "Amount recovered"],
+          labels: ["Pending", "Approved", "Rejected"],
           datasets: [
             {
-              data: [65, 35],
-              backgroundColor: ["#4e73df", "#1cc88a"],
-              hoverBackgroundColor: ["#2e59d9", "#17a673"],
+              data: [65, 25, 10],
+              backgroundColor: ["#4e73df", "#1cc88a", "#e74a3b"],
+              hoverBackgroundColor: ["#2e59d9", "#17a673", "#2c9faf"],
               hoverBorderColor: "rgba(234, 236, 244, 1)",
             },
           ],
