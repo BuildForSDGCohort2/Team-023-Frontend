@@ -1,30 +1,30 @@
-import React, {useState } from 'react';
+import React, {useState} from 'react';
 
 const ProviderSignUp = ()=> {
-    const [address, setAddress] = useState('');
     const [name, setName] = useState('');
+    const [address, setAddress] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
-    const nameInput = (val)=>{
-        setName(val)
+    const nameInput = (e)=>{
+        setName(e.target.value)
     }
-    const addressInput = (val)=>{
-        setAddress(val)
+    const addressInput = (e)=>{
+        setAddress(e.target.value)
     }
-    const emailInput = (val)=>{
-        setEmail(val)
+    const emailInput = (e)=>{
+        setEmail(e.target.value)
     }
-    const numberInput = (val)=>{
-        setPhoneNumber(val)
+    const numberInput = (e)=>{
+        setPhoneNumber(e.target.value)
     }
-    const passwordInput = (val)=>{
-        setPassword(val)
+    const passwordInput = (e)=>{
+        setPassword(e.target.value)
     }
-    const confirmPasswordInput = (val)=>{
-        setConfirmPassword(val)
+    const confirmPasswordInput = (e)=>{
+        setConfirmPassword(e.target.value)
     }
         return (
             <div className="container">
@@ -46,17 +46,18 @@ const ProviderSignUp = ()=> {
                                     form-control-user" 
                                     id="exampleInputEmail" 
                                     placeholder="Business Name" 
-                                    onChange={(val)=>nameInput(val)}
+                                    onChange={(e)=>nameInput(e)}
                                     value={name} 
                                 />
                             </div>
                             <div className="form-group">
                                 <input 
-                                    type="text" 
+                                    type="text"
+                                    name="address" 
                                     className="form-control form-control-user" 
                                     id="exampleInputEmail" 
                                     placeholder="Business Address"
-                                    onChange={(val)=>addressInput(val)}
+                                    onChange={(e)=>addressInput(e)}
                                     value={address} 
                                 />
                             </div>
@@ -67,7 +68,7 @@ const ProviderSignUp = ()=> {
                                     className="form-control form-control-user" 
                                     id="exampleFirstName" 
                                     placeholder="Email Address"
-                                    onChange={(val)=>emailInput(val)}
+                                    onChange={(e)=>emailInput(e)}
                                     value={email} 
                                 />
                                 </div>
@@ -77,7 +78,7 @@ const ProviderSignUp = ()=> {
                                     className="form-control form-control-user" 
                                     id="exampleLastName" 
                                     placeholder="Phone Number"
-                                    onChange={(val)=>numberInput(val)}
+                                    onChange={(e)=>numberInput(e)}
                                     value={phoneNumber} 
                                 />
                                 </div>
@@ -90,7 +91,7 @@ const ProviderSignUp = ()=> {
                                     className="form-control form-control-user" 
                                     id="exampleInputPassword"
                                     placeholder="Password"
-                                    onChange={(val)=>passwordInput(val)}
+                                    onChange={(e)=>passwordInput(e)}
                                     value={password}
                                 />
                                 </div>
@@ -100,7 +101,7 @@ const ProviderSignUp = ()=> {
                                     className="form-control form-control-user"
                                     id="exampleRepeatPassword" 
                                     placeholder="Repeat Password"
-                                    onChange={(val)=>confirmPasswordInput(val)}
+                                    onChange={(e)=>confirmPasswordInput(e)}
                                     value={confirmPassword}
                                 />
                                 </div>
